@@ -11,7 +11,7 @@ function generatePassword() {
   var number = confirm("Do you want a number?")
   var specialcharacter = confirm("Do you want special Charactor?")
   console.log(passwordlength)
-  var acceptableChars = []
+  var acceptableChars = [] // empty array
   if (uppercase) {
     acceptableChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   }
@@ -26,6 +26,13 @@ function generatePassword() {
     acceptableChars += "~!@#$%^&*()+_-="
   }
   console.log (acceptableChars)
+  var password = "" // empty string
+  for(let i=0; i<passwordlength; i++){
+    var index = Math.floor(Math.random() * acceptableChars.length)
+    password += acceptableChars[index]
+  }
+  return password
+
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
