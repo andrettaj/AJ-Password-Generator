@@ -18,4 +18,10 @@ This particular challenge, I learned how to create a function, and how to use lo
 
 What makes this project unique is the alert menu that pops down, where the user enters a response after each question asked.
 
+Challenges for me is learning the looping and learning the coding.
+
+Published Website: 
+https://andrettaj.github.io/AJ-Password-Generator/
+
 ![Alt text](image.png)
+
